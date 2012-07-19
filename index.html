@@ -4,21 +4,18 @@
 	<head>
 		<meta charset="utf-8">
 		
-		<title>reveal.js - HTML5 Presentations</title>
+		<title>GIT - podstawy</title>
 
 		<meta name="description" content="An easy to use CSS 3D slideshow tool for quickly creating good looking HTML presentations.">
-		<meta name="author" content="Hakim El Hattab">
-
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="author" content="Paweł Smoleński">
 		
 		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 		
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/print.css" type="text/css" media="print">
+		<link rel="stylesheet" href="lib/reveal/css/reset.css">
+		<link rel="stylesheet" href="lib/reveal/css/main.css">
+		<link rel="stylesheet" href="lib/reveal/css/print.css" type="text/css" media="print">
 
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="lib/reveal/css/zenburn.css">
 	</head>
 	
 	<body>
@@ -257,11 +254,11 @@ function linkify( selector ) {
 		</div>
 
 		<!-- Optional libraries for code syntax highlighting and classList support in IE9 -->
-		<script src="lib/js/head.min.js"></script>
+		<script src="lib/reveal/lib/js/head.min.js"></script>
 
 		<script>
 			// Load the main reveal.js script
-			head.js( 'js/reveal.js', function() {
+			head.js( 'lib/reveal/js/reveal.js', function() {
 				// Parse the query string into a key/value object
 				var query = {};
 
@@ -292,17 +289,12 @@ function linkify( selector ) {
 			} );
 			
 			// Load third party scripts
-			head.js( 'lib/js/classList.js' );
-			head.js( 'lib/js/highlight.js', function() {
+			head.js( 'lib/reveal/lib/js/classList.js' );
+			head.js( 'lib/reveal/lib/js/highlight.js', function() {
 				// Fire off syntax highlighting for potential code samples in the slides
 				hljs.initHighlightingOnLoad();
 			} );
 
-			// If we're runnning the notes server we need to include some additional JS
-			// TODO Is there a better way to determine if we're running the notes server?
-			if( window.location.host === 'localhost:1947' ) {
-				head.js( 'socket.io/socket.io.js', 'plugin/speakernotes/client.js' );
-			}
 		</script>
 		
 	</body>
