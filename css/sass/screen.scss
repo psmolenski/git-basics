@@ -1,0 +1,85 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+
+$white: #fbfbfb;
+$beige: #F0EFE7;
+
+@font-face {
+    font-family: "Advent Pro";
+    src: url('fonts/Advent_Pro/AdventPro-Regular.ttf');
+    font-style:normal;
+    font-weight:400;
+}
+@font-face {
+    font-family: "Advent Pro";
+    src: url('fonts/Advent_Pro/AdventPro-Bold.ttf');
+    font-style:bold;
+    font-weight:700;
+}
+@font-face {
+    font-family: "Stoke";
+    src: url('fonts/Stoke/Stoke-Regular.ttf');
+    font-style:normal;
+    font-weight:400;
+}
+@font-face {
+    font-family: "Neuton";
+    src: url('fonts/Neuton/Neuton-Regular.ttf');
+    font-style:normal;
+    font-weight:400;
+}
+
+.theme-beige
+{
+  
+  body
+  {
+    background-image: url('../images/isometric-grid.png');
+    background-color: $beige;
+  }
+
+  .reveal
+  {
+    section
+    {
+      h1
+      {
+        font-family: "Neuton", serif;
+        font-size: 60px;
+      }
+      
+      h4
+      {
+        font-family: "Advent Pro", sans-serif;
+        text-transform: none;
+      }
+      
+      p
+      {
+        font-family: "Signika", sans-serif;
+        text-transform: none;
+      }
+      
+      img
+      {
+        border: none;
+        @include box-shadow(none);
+      }
+      
+      footer
+      {
+        
+        position: absolute;
+        width: 900px;
+        bottom: 0;
+      }
+    }
+  }  
+  
+
+}

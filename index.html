@@ -11,11 +11,16 @@
 		
 		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 		
-		<link rel="stylesheet" href="lib/reveal/css/reset.css">
 		<link rel="stylesheet" href="lib/reveal/css/main.css">
 		<link rel="stylesheet" href="lib/reveal/css/print.css" type="text/css" media="print">
 
-		<link rel="stylesheet" href="lib/reveal/css/zenburn.css">
+		
+		 <link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		  <link href="css/print.css" media="print" rel="stylesheet" type="text/css" />
+		  <!--[if IE]>
+		      <link href="/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		  <![endif]-->
+		  
 	</head>
 	
 	<body>
@@ -28,16 +33,15 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3 class="inverted">CSS 3D Presentations</h3>
-					<script>
-						// Delicously hacky. Look away.
-						if( navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) ) document.write( '<p style="color: rgba(0,0,0,0.3); text-shadow: none;">('+'Tap to navigate'+')</p>' );
-					</script>
+					<img src="images/git_logo_color.png" width="900px" style="margin-bottom: 60px;"/>
+					<h4>autor: Paweł Smoleński</h4>
+					<footer>
+						test
+					</footer>
 				</section>
 				
 				<section>
-					<h2>Heads Up</h2>
+					<h1>Heads Up</h1>
 					<p>
 						reveal.js is an easy to use, HTML based, presentation tool. You'll need a modern browser with 
 						support for CSS 3D transforms to see it in its full glory.
@@ -46,9 +50,7 @@
 						<i><small>- <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small></i>
 					</p>
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you run the speaker notes server.
-					</aside>
+					
 				</section>
 				
 				<!-- Example of nested vertical slides -->
@@ -279,11 +281,11 @@ function linkify( selector ) {
 				// Full list of configuration options available here:
 				// https://github.com/hakimel/reveal.js#configuration
 				Reveal.initialize({
-					controls: true,
+					controls: false,
 					progress: true,
 					history: true,
 					
-					theme: query.theme || 'default', // default/neon/beige
+					theme: query.theme || 'beige', // default/neon/beige
 					transition: query.transition || 'default' // default/cube/page/concave/linear(2d)
 				});
 			} );
