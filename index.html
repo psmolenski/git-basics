@@ -20,7 +20,8 @@
 		  <!--[if IE]>
 		      <link href="/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
 		  <![endif]-->
-		  
+		  <script type="text/javascript" charset="utf-8" src="lib/jquery-1.7.2.min.js"></script>
+		  <script type="text/javascript" src="js/main.js"></script>
 	</head>
 	
 	<body>
@@ -32,23 +33,40 @@
 			
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
-					<img src="images/git_logo_color.png" width="900px" style="margin-bottom: 60px;"/>
+				<section class="title-page centered">
+					<img src="images/git_logo_color.png" width="900px" style="margin-bottom: 40px;"/>
+					<span class="basics">podstawy</span>
 					<h4>autor: Paweł Smoleński</h4>
-					<footer>
-						test
-					</footer>
+					
 				</section>
 				
 				<section>
-					<h1>Heads Up</h1>
-					<p>
-						reveal.js is an easy to use, HTML based, presentation tool. You'll need a modern browser with 
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
-					<p>
-						<i><small>- <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small></i>
-					</p>
+					<h1>plan prezentacji</h1>
+					<ul>
+						<li>trochę teorii
+							<ul>
+								<li>czego oczekujemy od porządnego VCS-u <em>(ang. Version Control System)</em></li>
+								<li>rodzaje VCS-ów</li>
+								<li>jak działa rozproszony VCS</li>
+								<li>zalety rozproszenia</li>
+							</ul>	
+						</li>
+						<li>trochę praktyki
+							<ul>
+								<li>filozofia <span class="git">git</span>-a</li>
+								<li>podstawowe komendy</li>
+								<li>barnch &amp; merge</li>
+								<li>zewnętrzne repozytoria</li>
+								<li>cofanie zmian</li>
+							</ul>	
+						</li>
+						<li>podsumowanie
+							<ul>
+								<li>literatura</li>
+							</ul>
+						</li>
+						<li>pytania</li>
+					</ul>
 
 					
 				</section>
@@ -242,6 +260,12 @@ function linkify( selector ) {
 				</section>
 			</div>
 
+			<footer>
+						<div class="progress-bar"></div>
+						<img class="logo" src="images/git_logo_color.png" alt="git logo" width="50px"/>
+						<small>Centrum Modelowania Matematycznego i Komupterowego, 25 lipca 2012</small>
+					</footer>
+			
 			<!-- The navigational controls UI -->
 			<aside class="controls">
 				<a class="left" href="#">&#x25C4;</a>
@@ -275,7 +299,7 @@ function linkify( selector ) {
 
 				// Fires each time a new slide is activated
 				Reveal.addEventListener( 'slidechanged', function( event ) {
-					// event.previousSlide, event.currentSlide, event.indexh, event.indexv
+					
 				} );
 
 				// Full list of configuration options available here:
@@ -286,7 +310,7 @@ function linkify( selector ) {
 					history: true,
 					
 					theme: query.theme || 'beige', // default/neon/beige
-					transition: query.transition || 'default' // default/cube/page/concave/linear(2d)
+					transition: query.transition || 'linear' // default/cube/page/concave/linear(2d)
 				});
 			} );
 			
