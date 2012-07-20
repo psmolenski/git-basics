@@ -21,6 +21,7 @@
 		      <link href="/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
 		  <![endif]-->
 		  <script type="text/javascript" charset="utf-8" src="lib/jquery-1.7.2.min.js"></script>
+		  <script type="text/javascript" src="lib/jquery-ui-1.8.21.custom.min.js"></script>
 		  <script type="text/javascript" src="js/main.js"></script>
 	</head>
 	
@@ -39,16 +40,20 @@
 					<h4>autor: Paweł Smoleński</h4>
 					
 				</section>
-				
+				<section class="centered">
+					<div style="font-size: 50px;" class="middle">
+						<span class="git">SCM</span><em> - ang. Source Code Manager</em>
+					</div>
+					
+				</section>
 				<section>
 					<h1>o czym powiem</h1>
 					<ul>
 						<li>trochę teorii
 							<ul>
-								<li>czego oczekujemy od porządnego VCS-u <em>(ang. Version Control System)</em></li>
-								<li>rodzaje VCS-ów</li>
-								<li>jak działa rozproszony VCS</li>
-								<li>zalety rozproszenia</li>
+								<li>czego oczekujemy od porządnego SCM-u</li>
+								<li>rodzaje SCM-ów</li>
+								<li>jak działa rozproszony SCM</li>
 							</ul>	
 						</li>
 						<li>trochę praktyki
@@ -71,172 +76,107 @@
 					
 				</section>
 				
-				<!-- Example of nested vertical slides -->
 				<section>
-					<section>
 						<h1>o czym nie powiem</h1>
 						<ul>
+							<li>wnętrzności <span class="git">git</span>-a</li>
 							<li>zagadnienia administracyjne</li>
 							<li>hooki</li>
 							<li>patchowanie</li>
 							<li>modele zarządzania repozytoriami</li>
 						</ul>
 				</section>
-
 				<section>
-					<h2>Holistic Overview</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview!
-					</p>
+					<h1>trochę teorii</h1>
 				</section>
-
 				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides pinch your way to the overview.
-					</p>
+					<h1>podział SCM-ów</h1>
+					<img src="images/delta_storage.png" class="fragment"/>
+					<img src="images/dag_storage.png" class="fragment"/>
 				</section>
-
 				<section>
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like:
-					</p>
+					<h1>podział SCM-ów (II)</h1>
+					<table >
+						<tbody>
+							<tr>
+								<td class="fragment">
+									<ul>
+										<li>
+										delta storage
+											<ul>
+												<li class="fragment">lokalny
+													<ul>
+														<li>rsc</li>
+													</ul>	
+												</li>
+												<li class="fragment">scentralizowany
+													<ul>
+														<li>csv</li>
+														<li>svn</li>
+														<li>perforce</li>
+													</ul>	
+												</li>
+												<li class="fragment">rozproszony
+													<ul>
+														<li>darcs</li>
+														<li>mercurial</li>
+													</ul>	
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</td>
+								<td style="padding-left: 80px; vertical-align: top;" class="fragment">
+									<ul>
+						
+										<li>
+											DAG storage
+											<ul>
+												<li class="fragment">lokalny
+												<ul>
+													<li>cp -r</li>
+													<li>time machine</li>
+												</ul>	
+												</li>
+												<li class="fragment">scentralizowany</li>
+												<li class="fragment">
+													rozproszony
+													<ul>
+														<li>bitkeeper<sup>*</sup></li>
+														<li>bazaar</li>
+														<li><span class="git">git</span></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+				<section>
+					<h1>cechy dobrego SCM-u</h1>
 					<ul>
-						<li><a href="http://lab.hakim.se/reveal-js/?transition=cube">Cube</a></li>
-						<li><a href="http://lab.hakim.se/reveal-js/?transition=page">Page</a></li>
-						<li><a href="http://lab.hakim.se/reveal-js/?transition=concave">Concave</a></li>
-						<li><a href="http://lab.hakim.se/reveal-js/?transition=linear">Linear</a></li>
+						<li class="fragment">bezpieczeństwo</li>
+						<li class="fragment">niezawodność</li>
+						<li class="fragment">szybkość</li>
+						<li class="fragment">elastyczność</li>
 					</ul>
+					
 				</section>
-
 				<section>
-					<h2>Marvelous Unordered List</h2>
+					<h1>dlaczego <span class="git">git</span>?</h1>
 					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
+						<li class="fragment">jest superszybki</li>
+						<li class="fragment">jest wydajny</li>
+						<li class="fragment">gwarantuje bezpieczeństwo danch</li>
+						<li class="fragment">jest łatwy w obsłudze</li>
+						<li class="fragment">umożliwia pracę offline</li>
+						<li class="fragment">ułatwia eksperymentowanie</li>
+						<li class="fragment">upraszcza zarządznie repozytorium</li>
+						<li class="fragment">świetny do projektów open source</li>
 					</ul>
-				</section>
-				
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section>
-					<section data-state="alert">
-						<h2>Global State</h2>
-						<p>
-							Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-							will be added as a class to the document element when the slide is open. This let's you
-							apply broader style changes, like switching the background.
-						</p>
-						<a href="#/7/1" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						</a>
-					</section>
-					<section data-state="blackout">
-						<h2>"blackout"</h2>
-						<a href="#/7/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						</a>
-					</section>
-					<section data-state="soothe">
-						<h2>"soothe"</h2>
-						<a href="#/7/0" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code contenteditable style="font-size: 18px; margin-top: 20px;">Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						The nice thing about standards is that there are so many to choose from</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						For years there has been a theory that millions of monkeys typing at random on millions of typewriters would 
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.
-					</blockquote>
-				</section>
-				
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-    
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i < len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) ) {
-        node.className += ' roll';
-      }
-    };
-  }
-}
-					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-				
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,<br/>
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Fragmented Views</h2>
-					<p>Hit the next arrow...</p>
-					<p class="fragment">... to step through ...</p>
-					<ol>
-						<li class="fragment"><code>any type</code></li>
-						<li class="fragment"><em>of view</em></li>
-						<li class="fragment"><strong>fragments</strong></li>
-					</ol>
-				</section>
-				
-				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://hakim.se/experiments/html5/breakdom/" target="_blank">
-						<img width="320" height="412" src="https://s3.amazonaws.com/hakim-static/reveal-js/breakdom.png">
-					</a>
-				</section>
-				
-				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on github</a></li>
-						<li><a href="http://hakim.se/projects/reveal-js">Read more on my site</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
-				</section>
-				
-				<section>
-					<h1>THE END</h1>
-					<h3 class="inverted">BY Hakim El Hattab / hakim.se</h3>
 				</section>
 			</div>
 
