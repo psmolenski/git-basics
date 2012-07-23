@@ -21,7 +21,6 @@
 		      <link href="/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
 		  <![endif]-->
 		  <script type="text/javascript" charset="utf-8" src="lib/jquery-1.7.2.min.js"></script>
-		  <script type="text/javascript" src="lib/jquery-ui-1.8.21.custom.min.js"></script>
 		  <script type="text/javascript" src="js/main.js"></script>
 	</head>
 	
@@ -41,9 +40,14 @@
 					
 				</section>
 				<section class="centered">
-					<div style="font-size: 50px;" class="middle">
-						<span class="git">SCM</span><em> - ang. Source Code Manager</em>
-					</div>
+					<table>
+						<tr>
+							<td style="vertical-align: middle; text-align: center; height: 600px; width: 800px; font-size: 50px;">
+							<span class="git">SCM</span><em> - ang. Source Code Manager</em>
+							  
+							</td>
+						</tr>
+					</table>
 					
 				</section>
 				<section>
@@ -87,7 +91,15 @@
 						</ul>
 				</section>
 				<section>
-					<h1>trochę teorii</h1>
+					<table>
+						<tbody>
+							<tr>
+								<td style="text-align: center; width: 800px; height: 600px;">
+									<h1>trochę teorii</h1>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</section>
 				<section>
 					<h1>podział SCM-ów</h1>
@@ -177,6 +189,78 @@
 						<li class="fragment">upraszcza zarządznie repozytorium</li>
 						<li class="fragment">świetny do projektów open source</li>
 					</ul>
+				</section>
+				<section>
+					<h1>gdzie można korzystać z <span class="git">git</span>-a?</h1>
+					<ul>
+						<li class="fragment">UNIX/Linux</li>
+						<li class="fragment">Mac/OSX</li>
+						<li class="fragment">Windows <em>(mysysgit)</em></li>
+					</ul>
+					<p style="margin-top: 30px;" class="fragment">linia poleceń, dedykowane programy, wtyczki do IDE</p>
+				</section>
+				<section id="who-uses-git">
+					<h1>kto korzysta z <span class="git">git</span>-a?</h1>
+					<div class="with-std-bg fragment" style="display: inline-block; padding: 20px;">
+						<img src="images/logos/google.png" alt="" />
+						<img src="images/logos/facebook.png" alt="" />
+						<img src="images/logos/twitter.png" alt="" />
+						<img src="images/logos/microsoft.png" alt="" />
+						<img src="images/logos/netflix.png" alt="" />
+						<img src="images/logos/perl.png" alt="" />
+						<img src="images/logos/linked-in.png" alt="" />
+						<img src="images/logos/android.png" alt="" />
+						<img src="images/logos/linux.png" alt="" />
+						<img src="images/logos/eclipse.png" alt="" />
+						<img src="images/logos/kde.png" alt="" />
+						<img src="images/logos/postgresql.png" alt="" />
+						<img src="images/logos/x.png" alt="" />
+						<img src="images/logos/rails.png" alt="" />
+						<img src="images/logos/qt.png" alt="" />
+						<img src="images/logos/postgresql.png" alt="" />
+						
+					</div>
+					<span class="fragment">Ponad 3mln publicznych repozytoriów na github.com</span>
+				</section>
+				<section>
+					<table>
+						<tbody>
+							<tr>
+								<td style="text-align: center; width: 800px; height: 600px;">
+									<h1>trochę praktyki</h1>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+				<section>
+					<table>
+						<tbody>
+							<tr>
+								<td style="text-align: center; width: 800px; height: 600px;">
+									<dl>
+										<dt>
+											<code style="margin-top: 80px;">git init</code>
+											
+										</dt>
+									<dd>tworzy nowe repozytorium</dd>
+									</dl>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+				<section>
+					<h1>co siedzi w <code>.git</code>?</h1>
+					<ul>
+						<li>config <em> - konfiguracja repozytorium</em></li>
+						<li>index</li>
+						<li>objects <em> - dane (pliki/commity/tagi)</em></li>
+						<li>refs <em> - odnośniki do danych</em></li>
+						<li>logs <em> - logi</em></li>
+						<li>hooks <em> - skrypty akcji</em></li>
+					</ul>
+					
 				</section>
 			</div>
 

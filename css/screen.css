@@ -126,11 +126,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: #98968b;
   font-style: normal;
 }
+/* line 81, sass/screen.scss */
+.theme-beige body code {
+  font-size: 50px;
+  display: block;
+}
 /* line 87, sass/screen.scss */
+.theme-beige body dd {
+  margin-top: 20px;
+  color: #98968b;
+}
+/* line 97, sass/screen.scss */
 .theme-beige .reveal .slides {
   padding: 0;
 }
-/* line 92, sass/screen.scss */
+/* line 102, sass/screen.scss */
 .theme-beige .reveal footer {
   position: fixed;
   width: 100%;
@@ -139,31 +149,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-top: solid 1px #d8d7cf;
   padding-top: 10px;
 }
-/* line 103, sass/screen.scss */
+/* line 113, sass/screen.scss */
 .theme-beige .reveal footer small {
 @inclide inline-block;
 }
-/* line 109, sass/screen.scss */
+/* line 119, sass/screen.scss */
 .theme-beige .reveal footer img.logo {
   float: right;
   margin: 0 10px;
 }
-/* line 118, sass/screen.scss */
+/* line 128, sass/screen.scss */
 .theme-beige .reveal .progress {
   background: #d8d7cf;
   height: 10px;
 }
-/* line 123, sass/screen.scss */
+/* line 133, sass/screen.scss */
 .theme-beige .reveal .progress span {
   background: #f14e32;
 }
-/* line 129, sass/screen.scss */
+/* line 139, sass/screen.scss */
 .theme-beige .reveal section {
   text-align: left;
   width: 800px;
   height: 550px;
 }
-/* line 138, sass/screen.scss */
+/* line 148, sass/screen.scss */
 .theme-beige .reveal section h1 {
   font-family: "Neuton", serif;
   font-size: 60px;
@@ -171,39 +181,48 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-transform: none;
   font-weight: bold;
 }
-/* line 147, sass/screen.scss */
+/* line 156, sass/screen.scss */
+.theme-beige .reveal section h1 code {
+  display: inline;
+}
+/* line 162, sass/screen.scss */
 .theme-beige .reveal section h4 {
   font-family: "Advent Pro", sans-serif;
   text-transform: none;
 }
-/* line 155, sass/screen.scss */
+/* line 170, sass/screen.scss */
 .theme-beige .reveal section img {
   border: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  margin: 0;
 }
-/* line 161, sass/screen.scss */
+/* line 177, sass/screen.scss */
 .theme-beige .reveal section ul, .theme-beige .reveal section ol {
   margin-left: 1em;
 }
-/* line 164, sass/screen.scss */
+/* line 180, sass/screen.scss */
 .theme-beige .reveal section ul li, .theme-beige .reveal section ol li {
   font-family: "Advent Pro", sans-serif;
 }
-/* line 167, sass/screen.scss */
+/* line 183, sass/screen.scss */
 .theme-beige .reveal section ul li ul, .theme-beige .reveal section ul li ol, .theme-beige .reveal section ol li ul, .theme-beige .reveal section ol li ol {
   font-size: 0.8em;
 }
-/* line 174, sass/screen.scss */
+/* line 190, sass/screen.scss */
 .theme-beige .reveal section span.git {
   font-family: 'adelle';
 }
-/* line 181, sass/screen.scss */
+/* line 195, sass/screen.scss */
+.theme-beige .reveal section .with-std-bg {
+  background: url("../images/bg.jpg");
+}
+/* line 200, sass/screen.scss */
 .theme-beige .reveal section.centered {
   text-align: center;
 }
-/* line 188, sass/screen.scss */
+/* line 207, sass/screen.scss */
 .theme-beige .reveal section.title-page span.basics {
   font-family: 'adelle';
   font-size: 51px;
@@ -211,4 +230,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   top: -124px;
   left: 377px;
   color: #f14e32;
+}
+
+/* line 225, sass/screen.scss */
+#who-uses-git div {
+  margin-bottom: 20px;
+}
+/* line 228, sass/screen.scss */
+#who-uses-git div img {
+  margin: 20px 5px;
 }
