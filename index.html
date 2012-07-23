@@ -240,7 +240,7 @@
 								<td style="text-align: center; width: 800px; height: 600px;">
 									<dl>
 										<dt>
-											<code style="margin-top: 80px;">git init</code>
+											<code class="big">git init</code>
 											
 										</dt>
 									<dd>tworzy nowe repozytorium</dd>
@@ -251,7 +251,7 @@
 					</table>
 				</section>
 				<section>
-					<h1>co siedzi w <code>.git</code>?</h1>
+					<h1>co siedzi w <code class="big">.git</code>?</h1>
 					<ul>
 						<li>config <em> - konfiguracja repozytorium</em></li>
 						<li>index</li>
@@ -269,10 +269,43 @@
 								<td style="text-align: center; width: 800px; height: 600px;">
 									<dl>
 										<dt>
-											<code style="margin-top: 80px;">git config  <em>name value</em></code>
+											<code class="big">git config  <em>name value</em></code>
 											
 										</dt>
 									<dd>zmienia konfigurację repozytorium</dd>
+									</dl>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+				<section>
+					<h1>przydatne opcje konfiguracyjne</h1>
+					<ul>
+						<li>user.name <em> - nazwa użytkownika</em></li>
+						<li>user.email<em> - email użytkownika</em></li>
+						<li>color.ui <em> - kolorowanie komunikatów</em></li>
+						<li>core.editor <em> - domyślny edytor</em></li>
+						<li>alias.* <em> - aliasy</em></li>
+					</ul>
+					<h1>opcje komendy</h1>
+					<ul>
+						<li>--system <em> - zapisuje konfigurację w <code class="inline">/etc/gitconfig</code></em></li>
+						<li>--global<em> - zapisuje konfigurację w <code class="inline">~/.gitconfig</code></em></li>
+						<li>--list<em> - wyświetla aktywną konfigurację</em></li>
+					</ul>
+				</section>
+				<section>
+					<table>
+						<tbody>
+							<tr>
+								<td style="text-align: center; width: 800px; height: 600px;">
+									<dl>
+										<dt>
+											<code class="big">git status</code>
+											
+										</dt>
+									<dd>wyświetla aktualny stan repozytorium</dd>
 									</dl>
 								</td>
 							</tr>

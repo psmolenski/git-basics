@@ -79,8 +79,17 @@ font-weight:700;
     
     code
     {
-      font-size: 40px;
+      font-size: 30px;
       display: block;
+      
+      &.inline
+      {
+        display: inline;
+      }
+      
+      &.big{
+        font-size: 50px;
+      }
     }
     
     dd
@@ -151,6 +160,12 @@ font-weight:700;
         color: $orange;
         text-transform: none;
         font-weight: bold;
+        margin-top: 20px;
+        
+        &:first-child
+        {
+          margin-top: 0;
+        }
         
         code
         {
