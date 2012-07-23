@@ -12,6 +12,7 @@ $beige: #F0EFE7;
 $orange: #F14E32;
 $grey: #D8D7CF;
 $darkerGrey: #98968B;
+$red: #A54040;
 
 $greenContainer: #90EE90;
 
@@ -90,6 +91,7 @@ font-weight:700;
       &.big{
         font-size: 50px;
       }
+      
     }
     
     dd
@@ -151,6 +153,15 @@ font-weight:700;
       width: 800px;
       height: 550px;
       
+      .important
+      {
+        color: $red;
+        font-weight: bold;
+        margin-top: 20px;
+        display: inline-block;
+        border: 2px solid $red;
+        padding: 5px 8px;
+      }
       
       
       h1

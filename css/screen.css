@@ -109,7 +109,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-weight: 700;
 }
 
-/* line 62, sass/screen.scss */
+/* line 63, sass/screen.scss */
 .theme-beige body {
   background-image: url("../images/isometric-grid.png");
   background-color: #f0efe7;
@@ -117,38 +117,38 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-size: 35px;
   text-transform: none;
 }
-/* line 70, sass/screen.scss */
+/* line 71, sass/screen.scss */
 .theme-beige body small {
   font-size: 12px;
 }
-/* line 75, sass/screen.scss */
+/* line 76, sass/screen.scss */
 .theme-beige body em {
   color: #98968b;
   font-style: normal;
 }
-/* line 81, sass/screen.scss */
+/* line 82, sass/screen.scss */
 .theme-beige body code {
   font-size: 30px;
   display: block;
 }
-/* line 86, sass/screen.scss */
+/* line 87, sass/screen.scss */
 .theme-beige body code.inline {
   display: inline;
 }
-/* line 90, sass/screen.scss */
+/* line 91, sass/screen.scss */
 .theme-beige body code.big {
   font-size: 50px;
 }
-/* line 96, sass/screen.scss */
+/* line 98, sass/screen.scss */
 .theme-beige body dd {
   margin-top: 20px;
   color: #98968b;
 }
-/* line 106, sass/screen.scss */
+/* line 108, sass/screen.scss */
 .theme-beige .reveal .slides {
   padding: 0;
 }
-/* line 111, sass/screen.scss */
+/* line 113, sass/screen.scss */
 .theme-beige .reveal footer {
   position: fixed;
   width: 100%;
@@ -157,31 +157,40 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-top: solid 1px #d8d7cf;
   padding-top: 10px;
 }
-/* line 122, sass/screen.scss */
+/* line 124, sass/screen.scss */
 .theme-beige .reveal footer small {
 @inclide inline-block;
 }
-/* line 128, sass/screen.scss */
+/* line 130, sass/screen.scss */
 .theme-beige .reveal footer img.logo {
   float: right;
   margin: 0 10px;
 }
-/* line 137, sass/screen.scss */
+/* line 139, sass/screen.scss */
 .theme-beige .reveal .progress {
   background: #d8d7cf;
   height: 10px;
 }
-/* line 142, sass/screen.scss */
+/* line 144, sass/screen.scss */
 .theme-beige .reveal .progress span {
   background: #f14e32;
 }
-/* line 148, sass/screen.scss */
+/* line 150, sass/screen.scss */
 .theme-beige .reveal section {
   text-align: left;
   width: 800px;
   height: 550px;
 }
 /* line 157, sass/screen.scss */
+.theme-beige .reveal section .important {
+  color: #a54040;
+  font-weight: bold;
+  margin-top: 20px;
+  display: inline-block;
+  border: 2px solid #a54040;
+  padding: 5px 8px;
+}
+/* line 168, sass/screen.scss */
 .theme-beige .reveal section h1 {
   font-family: "Neuton", serif;
   font-size: 60px;
@@ -190,20 +199,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-weight: bold;
   margin-top: 20px;
 }
-/* line 166, sass/screen.scss */
+/* line 177, sass/screen.scss */
 .theme-beige .reveal section h1:first-child {
   margin-top: 0;
 }
-/* line 171, sass/screen.scss */
+/* line 182, sass/screen.scss */
 .theme-beige .reveal section h1 code {
   display: inline;
 }
-/* line 177, sass/screen.scss */
+/* line 188, sass/screen.scss */
 .theme-beige .reveal section h4 {
   font-family: "Advent Pro", sans-serif;
   text-transform: none;
 }
-/* line 185, sass/screen.scss */
+/* line 196, sass/screen.scss */
 .theme-beige .reveal section img {
   border: none;
   -webkit-box-shadow: none;
@@ -211,31 +220,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   box-shadow: none;
   margin: 0;
 }
-/* line 192, sass/screen.scss */
+/* line 203, sass/screen.scss */
 .theme-beige .reveal section ul, .theme-beige .reveal section ol {
   margin-left: 1em;
 }
-/* line 195, sass/screen.scss */
+/* line 206, sass/screen.scss */
 .theme-beige .reveal section ul li, .theme-beige .reveal section ol li {
   font-family: "Advent Pro", sans-serif;
 }
-/* line 198, sass/screen.scss */
+/* line 209, sass/screen.scss */
 .theme-beige .reveal section ul li ul, .theme-beige .reveal section ul li ol, .theme-beige .reveal section ol li ul, .theme-beige .reveal section ol li ol {
   font-size: 0.8em;
 }
-/* line 205, sass/screen.scss */
+/* line 216, sass/screen.scss */
 .theme-beige .reveal section span.git {
   font-family: 'adelle';
 }
-/* line 210, sass/screen.scss */
+/* line 221, sass/screen.scss */
 .theme-beige .reveal section .with-std-bg {
   background: url("../images/bg.jpg");
 }
-/* line 215, sass/screen.scss */
+/* line 226, sass/screen.scss */
 .theme-beige .reveal section.centered {
   text-align: center;
 }
-/* line 222, sass/screen.scss */
+/* line 233, sass/screen.scss */
 .theme-beige .reveal section.title-page span.basics {
   font-family: 'adelle';
   font-size: 51px;
@@ -245,11 +254,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: #f14e32;
 }
 
-/* line 240, sass/screen.scss */
+/* line 251, sass/screen.scss */
 #who-uses-git div {
   margin-bottom: 20px;
 }
-/* line 243, sass/screen.scss */
+/* line 254, sass/screen.scss */
 #who-uses-git div img {
   margin: 20px 5px;
 }
