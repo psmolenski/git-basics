@@ -55,14 +55,14 @@
 					<ul>
 						<li>trochę teorii
 							<ul>
-								<li>czego oczekujemy od porządnego SCM-u</li>
-								<li>rodzaje SCM-ów</li>
-								<li>jak działa rozproszony SCM</li>
+								<li>cechy dobrego SCM-u</li>
+								<li>podział SCM-ów</li>
+								<li>dlaczego git?</li>
 							</ul>	
 						</li>
 						<li>trochę praktyki
 							<ul>
-								<li>filozofia <span class="git">git</span>-a</li>
+								<li>filozofia gita</li>
 								<li>podstawowe komendy</li>
 								<li>barnch &amp; merge</li>
 								<li>zewnętrzne repozytoria</li>
@@ -71,6 +71,7 @@
 						</li>
 						<li>podsumowanie
 							<ul>
+								<li>migracja z SVN-a</li>
 								<li>literatura</li>
 							</ul>
 						</li>
@@ -83,7 +84,7 @@
 				<section>
 						<h1>o czym nie powiem</h1>
 						<ul>
-							<li>wnętrzności <span class="git">git</span>-a</li>
+							<li>wnętrzności gita</li>
 							<li>zagadnienia administracyjne</li>
 							<li>hooki</li>
 							<li>patchowanie</li>
@@ -102,9 +103,19 @@
 					</table>
 				</section>
 				<section>
+					<h1>cechy dobrego SCM-u</h1>
+					<ul>
+						<li class="fragment">bezpieczeństwo</li>
+						<li class="fragment">niezawodność</li>
+						<li class="fragment">szybkość</li>
+						<li class="fragment">elastyczność</li>
+					</ul>
+					
+				</section>
+				<section>
 					<h1>podział SCM-ów</h1>
 					<img src="images/delta_storage.png" class="fragment"/>
-					<img src="images/dag_storage.png" class="fragment"/>
+					<img src="images/dag_storage.png" class="fragment" style="margin-top: 20px;"/>
 				</section>
 				<section>
 					<h1>podział SCM-ów (II)</h1>
@@ -156,7 +167,7 @@
 													<ul>
 														<li>bitkeeper<sup>*</sup></li>
 														<li>bazaar</li>
-														<li><span class="git">git</span></li>
+														<li>git</li>
 													</ul>
 												</li>
 											</ul>
@@ -168,17 +179,7 @@
 					</table>
 				</section>
 				<section>
-					<h1>cechy dobrego SCM-u</h1>
-					<ul>
-						<li class="fragment">bezpieczeństwo</li>
-						<li class="fragment">niezawodność</li>
-						<li class="fragment">szybkość</li>
-						<li class="fragment">elastyczność</li>
-					</ul>
-					
-				</section>
-				<section>
-					<h1>dlaczego <span class="git">git</span>?</h1>
+					<h1>dlaczego git?</h1>
 					<ul>
 						<li class="fragment">jest superszybki</li>
 						<li class="fragment">jest wydajny</li>
@@ -191,7 +192,7 @@
 					</ul>
 				</section>
 				<section>
-					<h1>gdzie można korzystać z <span class="git">git</span>-a?</h1>
+					<h1>gdzie można korzystać z gita?</h1>
 					<ul>
 						<li class="fragment">UNIX/Linux</li>
 						<li class="fragment">Mac/OSX</li>
@@ -200,7 +201,7 @@
 					<p style="margin-top: 30px;" class="fragment">linia poleceń, dedykowane programy, wtyczki do IDE</p>
 				</section>
 				<section id="who-uses-git">
-					<h1>kto korzysta z <span class="git">git</span>-a?</h1>
+					<h1>kto korzysta z gita?</h1>
 					<div class="with-std-bg fragment" style="display: inline-block; padding: 20px;">
 						<img src="images/logos/google.png" alt="" />
 						<img src="images/logos/facebook.png" alt="" />
@@ -459,7 +460,7 @@
 						<tbody>
 							<tr>
 								<td style="text-align: center; width: 800px; height: 600px;">
-									<h1>branching</h1>
+									<h1>barnch &amp; merge</h1>
 								</td>
 							</tr>
 						</tbody>
@@ -879,7 +880,7 @@
 								<li>svn2git</li>
 							</ul>	
 						</li>
-						<li class="fragment">transparentne korzystanie z <span class="git">git</span>-a
+						<li class="fragment">transparentne korzystanie z gita
 							<ul>
 								<li>git-svn</li>
 								<li>subgit</li>
