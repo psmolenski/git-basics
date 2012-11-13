@@ -11,7 +11,7 @@ $black: #323232;
 $beige: #F0EFE7;
 $orange: #F14E32;
 $grey: #D8D7CF;
-$darkerGrey: #98968B;
+$darkerGrey: #5C5A51;
 $red: #A54040;
 
 $greenContainer: #90EE90;
@@ -63,8 +63,8 @@ font-weight:700;
   {
     background-image: url('../images/isometric-grid.png');
     background-color: $beige;
-    font-family: "Advent Pro", sans-serif;
-    font-size: 35px;
+    font-family: "Tahoma", sans-serif;
+    font-size: 27px;
     text-transform: none;
     
     small
@@ -112,9 +112,9 @@ font-weight:700;
     footer
     {
       
-      position: fixed;
+      position: absolute;
       width: 100%;
-      bottom: 10px;
+      bottom: 30px;
       text-align: center;
       
       border-top: solid 1px $grey;
@@ -123,16 +123,22 @@ font-weight:700;
       small
       {
         @inclide inline-block;
+        font-size: 18px;
+
         
       }
       
-      img.logo
-      {
-        float: right;
-        margin: 0 10px;
-      }
+      
       
 
+    }
+
+    img.logo
+    {
+        position: fixed;
+        bottom: 20px;
+        right: 0;
+        margin: 0 10px;
     }
     
     .progress
@@ -186,7 +192,7 @@ font-weight:700;
       
       h4
       {
-        font-family: "Advent Pro", sans-serif;
+        font-family: "Tahoma", sans-serif;
         text-transform: none;
       }
       
@@ -204,10 +210,10 @@ font-weight:700;
         margin-left: 1em;
         li
         {
-          font-family: "Advent Pro", sans-serif;
+          font-family: "Tahoma", sans-serif;
           ul, ol
           {
-            font-size: 0.8em;
+            font-size: 0.9em;
           }
         }
       }
@@ -229,13 +235,16 @@ font-weight:700;
       
       &.title-page
       {
+
+        margin-top: 80px;
+
         span.basics
         {
           font-family: 'adelle'; 
-          font-size: 51px;
+          font-size: 40px;
           position: relative;
-          top: -124px;
-          left: 377px;
+          top: -113px;
+          left: 258px;
           color: $orange;
         }
       }
