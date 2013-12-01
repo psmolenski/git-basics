@@ -162,6 +162,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   .theme-beige .reveal section ul, .theme-beige .reveal section ol {
     margin-left: 1em; }
     .theme-beige .reveal section ul li, .theme-beige .reveal section ol li {
+			line-height: 1.6em;
       font-family: "Tahoma", sans-serif; }
       .theme-beige .reveal section ul li ul, .theme-beige .reveal section ul li ol, .theme-beige .reveal section ol li ul, .theme-beige .reveal section ol li ol {
         font-size: 0.9em; }
